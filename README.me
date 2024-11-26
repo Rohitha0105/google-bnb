@@ -1,0 +1,38 @@
+How to Build an AI-Powered Personalized Recipe Maker with Flask and Gemini API
+In today’s world, artificial intelligence is revolutionizing nearly every industry, and food tech is no exception. Imagine a tool that can identify ingredients in your pantry or interpret an image of a dish, then generate a personalized recipe just for you. With the Gemini API, you can bring this vision to life, combining the power of AI with a Flask web application to create a recipe generator based on images.
+
+This blog will guide you step-by-step through building an AI-powered recipe maker using Python’s Flask framework, the Gemini API, and basic web development skills. By the end of this tutorial, you will have a working web application that analyzes images and generates recipes tailored to the dish
+
+Introduction | Overview
+Building a web application that generates recipes based on images requires integrating machine learning capabilities and a web framework. The problem this blog aims to solve is how to build a personalized recipe generator that can interpret images and suggest recipes accordingly. This tutorial will show you how to combine Flask, a Python-based web framework, with Google’s Gemini API, a powerful generative AI tool, to accomplish this task.
+
+Target Audience:
+Developers with basic experience in Flask and web development.
+AI enthusiasts curious about integrating generative models into web applications.
+Anyone interested in food tech or building AI-based applications.
+
+
+Outcome:
+By the end of this tutorial, you will have created a Flask-based web application that:
+
+Accepts image uploads from users.
+Processes the images using the Gemini API.
+Generates and displays a personalized recipe based on the AI’s analysis.
+
+Design
+High-Level Architecture:
+The architecture of this solution involves three major components:
+
+Flask Web Application: The server-side logic to handle user interaction and requests.
+Gemini API: The AI model that processes uploaded images and generates personalized recipes.
+Frontend: Simple HTML forms for users to upload images and view results.
+
+Design Choices:
+Flask is chosen for its simplicity in setting up small-to-medium scale web applications.
+Gemini API is used because of its generative capabilities, including image recognition and response generation, which is essential for creating personalized recipes.
+File Upload Handling: The app saves images temporarily and uses the image path to process it with the Gemini API.
+By structuring the app this way, we maintain separation between the user interface, backend logic, and AI processing, making it modular and easier to maintain.
+
+Flowchart:
+User uploads an image → Flask saves the image and sends it to Gemini API → Gemini API analyzes the image and generates a recipe → Flask displays the recipe on a results page.
+
